@@ -29,42 +29,46 @@
                 <!-- <h2>Cadastro do Funcionário</h2> -->
             </div>
             <hr>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Início</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"><strong>Cadastro do Funcionário</strong></li>
-                </ol>
-            </nav>
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><strong>Cadastro</strong></li>
+                    </ol>
+                </nav>
+            </div>
             <hr>
-            <form>
-                <div class="form-group">
-                  <label for="nome">Nome do Funcionário</label>
-                  <input type="text" class="form-control form-control-lg" id="nome">
-                </div>
-            </form>
-            <br>
-            <form>
-                <fieldset disabled>
-                    <div class="row">
-                        <div class="col">
-                            <label for="disabledTextInput1">Data Cadastro</label>
-                            <input type="text" class="form-control" value="30/03/2024 08:00">
-                        </div>
-                        <div class="col">
-                            <label for="disabledTextInput2">Última Edição</label>
-                            <input type="text" class="form-control" value="31/03/2024 21:00">
-                        </div>
+            <div>
+                <form>
+                    <div class="form-group">
+                    <label for="nome">Nome do Funcionário</label>
+                    <input type="text" class="form-control form-control-lg" id="nome">
                     </div>
-                </fieldset>
-            </form>            
-            <hr>
-            <div class="d-grid gap-2">
-                <button type="button" class="btn btn-outline-danger btn-block" onclick="redireciona('index.html')">
-                    <i class="fa fa-backward" aria-hidden="true"></i> Cancelar e Voltar
-                </button>
-                <button type="button" class="btn btn-outline-success btn-block" onclick="redireciona('listaFuncionarios.html')">
-                    <i class="fa fa-check-square" aria-hidden="true"></i> Salvar
-                </button>
+                </form>
+                <br>
+                <form>
+                    <fieldset disabled>
+                        <div class="row">
+                            <div class="col">
+                                <label for="disabledTextInput1">Data Cadastro</label>
+                                <input type="text" class="form-control" value="30/03/2024 08:00">
+                            </div>
+                            <div class="col">
+                                <label for="disabledTextInput2">Última Edição</label>
+                                <input type="text" class="form-control" value="31/03/2024 21:00">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>            
+                <hr>
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-danger btn-block" onclick="redireciona('index.html')">
+                        <i class="fa fa-backward" aria-hidden="true"></i> Cancelar e Voltar
+                    </button>
+                    <button type="button" class="btn btn-outline-success btn-block" onclick="redireciona('listaFuncionarios.html')">
+                        <i class="fa fa-check-square" aria-hidden="true"></i> Salvar
+                    </button>
+                </div>
             </div>
             
         </div>
