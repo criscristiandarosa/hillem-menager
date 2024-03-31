@@ -26,20 +26,31 @@
                 </div>
             </div>
             <div class="form-group text-center">
-                <h2>Lista de Funcionários</h2>
+                <!-- <h2>Lista de Funcionários</h2> -->
             </div>
             <hr>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><strong>Lista de Funcionários</strong></li>
+                </ol>
+              </nav>
+              <hr>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th class="col">Funcionário</th>
-                        <th class="col-1">Editar</th>
-                        <th class="col-1">Excluir</th>
+                        <th class="col-10">Funcionário</th>
+                        <th class="col" colspan="3" style="text-align: center;">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Fulano da Silva</td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-info btn-block btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Visualizar Horários do Funcionário" onclick="redireciona('horariosFuncionario.html')">
+                                <i class="fa fa-clock" aria-hidden="true"></i>
+                            </button>
+                        </td>
                         <td class="text-center">
                             <button type="button" class="btn btn-outline-primary btn-block btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar Funcionário" onclick="redireciona('funcionario.html')">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -54,6 +65,11 @@
                     <tr>
                         <td>Beltrano da Silva</td>
                         <td class="text-center">
+                            <button type="button" class="btn btn-outline-info btn-block btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Visualizar Horários do Funcionário" onclick="redireciona('horariosFuncionario.html')">
+                                <i class="fa fa-clock" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                        <td class="text-center">
                             <button type="button" class="btn btn-outline-primary btn-block btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar Funcionário" onclick="redireciona('funcionario.html')">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                             </button>
@@ -67,6 +83,11 @@
                     <tr>
                         <td>Ciclano da Silva</td>
                         <td class="text-center">
+                            <button type="button" class="btn btn-outline-info btn-block btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Visualizar Horários do Funcionário" onclick="redireciona('horariosFuncionario.html')">
+                                <i class="fa fa-clock" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                        <td class="text-center">
                             <button type="button" class="btn btn-outline-primary btn-block btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar Funcionário" onclick="redireciona('funcionario.html')">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
                             </button>
@@ -79,7 +100,12 @@
                     </tr>
                 </tbody>
             </table>
-                
+            <hr>
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-primary btn-block" onclick="redireciona('index.html')">
+                    <i class="fa fa-backward" aria-hidden="true"></i> Voltar ao Início
+                </button>
+            </div>    
         </div>
 
     </div>

@@ -27,21 +27,36 @@
             </div>
 
             <hr>
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Sim, confirmo</button>
+                    </div>
+                </div>
+                </div>
+            </div>
             
             <div>
-                <h5>Últimos Horários Registrados:</h5>
+                <h6>Últimos Horários Registrados:</h6>
                 <ul id="ultimosHorarios" class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
                         08:30 30/03 - Fulano da Silva e Silva
-                        <span class="text-danger"><i class="fas fa-trash" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir Horário"></i></span>
+                        <button type="button" class="btn btn-outline-danger btn-block btn-sm" data-bs-toggle="modal" data-bs-target="#modalExemplo">
+                            <i class="fa fa-trash" aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir Registro"></i>
+                        </button>
                     </li>
-                    <!-- <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
-                        Horário y - Funcionário y
-                        <span class="text-danger"><i class="fas fa-trash" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir Horário"></i></span>
-                    </li> -->
                 </ul>
                 <hr>
-                <h5>Mais opções:</h5>
+                <h6>Mais opções:</h6>
                 <div class="d-grid gap-2">
                     <button type="button" class="btn btn-outline-primary btn-block" onclick="redireciona('funcionario.html')"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar Funcionário</button>
                     <button type="button" class="btn btn-outline-primary btn-block" onclick="redireciona('listaFuncionarios.html')"><i class="fa fa-pencil" aria-hidden="true"></i> Editar Funcionários e Horários</button>
