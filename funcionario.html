@@ -19,7 +19,7 @@
 
 <body>
     <div class="d-flex justify-content-center">
-        <div class="container border rounded">
+        <div class="container border rounded p-3">
             <div class="d-flex justify-content-center">
                 <div class="form-group p-3">
                     <img src="hillem.png" alt="Italian Trulli" width="140" height="82">
@@ -29,9 +29,43 @@
                 <h2>Cadastro do Funcionário</h2>
             </div>
             <hr>
+            <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Nome do Funcionário</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="digite aqui o nome do funcionario">
+                </div>
+            </form>
+            <br>
+            <form>
+                <fieldset disabled>
+                    <div class="row">
+                        <div class="col">
+                            <label for="disabledTextInput1">Data Cadastro</label>
+                            <input type="text" id="disabledTextInput1" class="form-control" value="30/03/2024 08:00">
+                        </div>
+                        <div class="col">
+                            <label for="disabledTextInput2">Última Edição</label>
+                            <input type="text" id="disabledTextInput2" class="form-control" value="31/03/2024 21:00">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>            
+            <hr>
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-danger btn-block" onclick="redireciona('index.html')">
+                    <i class="fa fa-backward" aria-hidden="true"></i> Cancelar e Voltar
+                </button>
+                <button type="button" class="btn btn-outline-success btn-block" onclick="redireciona('listaFuncionarios.html')">
+                    <i class="fa fa-check-square" aria-hidden="true"></i> Salvar
+                </button>
+            </div>
+            
         </div>
-
     </div>
+
+    <footer class="text-center p-3">
+        <p>&copy; copyrights</p>
+    </footer>
 
     <script src="script.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
